@@ -8,10 +8,10 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>com.mycompany.prodCon</groupId>
-  <artifactId>producerZMQ</artifactId>
+  <artifactId>producer</artifactId>
   <packaging>sca-contribution-jar</packaging>
   <version>${fabric3.version}</version>
-  <name>prodcon</name>
+  <name>producer</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -42,7 +42,6 @@
         <groupId>org.fabric3</groupId>
         <artifactId>fabric3-binding-zeromq-api</artifactId>
         <version>${fabric3.version}</version>
-        <scope>provided</scope>
       </dependency>
   </dependencies>
 

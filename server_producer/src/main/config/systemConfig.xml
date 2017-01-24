@@ -2,7 +2,7 @@
     <domain autowire="on"/>
     <security allow.http.authentication="true"/>
     <web.server>
-        <http port="8181"/>
+        <http port="8183"/>
     </web.server>
     <datasources>
         <datasource name="LoanApplicationDS"

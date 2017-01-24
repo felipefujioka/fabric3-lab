@@ -47,6 +47,11 @@
         <configuration>
             <runtimeVersion>${fabric3.version}</runtimeVersion>
             <profiles>
+              <profile>
+                <groupId>org.fabric3</groupId>
+                <artifactId>profile-jeromq</artifactId>
+                <version>${fabric3.version}</version>
+              </profile>
               <!-- JPA support -->
               <profile>
                 <groupId>org.fabric3</groupId>
