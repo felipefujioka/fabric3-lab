@@ -1,0 +1,23 @@
+version: '2'
+services:
+  producer-server:
+    build:
+      context: .
+      args:
+        - server_path=server_consumer/target/image/bin/server.jar
+    image: producer-server
+    ports:
+      - "12001:12001"
+    volumes:
+       - /Users/felipefujioka/dockerM2:/root/.m2
+  consumer-server:
+    build:
+      context: .
+      args:
+        - server_path=server_producer/target/image/bin/server.jar
+    image: consumer-server
+    ports:
+      - "12001:12001"
+    volumes:
+      - /Users/felipefujioka/dockerM2:/root/.m2
+

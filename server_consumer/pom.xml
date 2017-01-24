@@ -17,14 +17,17 @@
 -->
 <project>
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
      <groupId>org.fabric3.samples</groupId>
      <artifactId>fabric3-samples</artifactId>
      <version>3.0.0</version>
   </parent>
+
   <artifactId>server_consumer</artifactId>
   <name>Fabric3 Server Single VM Server</name>
   <description>Fabric3 Single VM Server</description>
+  <version>${fabric3.version}</version>
 
   <properties>
       <h2.version>1.3.172</h2.version>
@@ -87,6 +90,7 @@
                 <version>${fabric3.version}</version>
               </profile>
             </profiles>
+
             <contributions>
               <dependency>
                 <groupId>com.mycompany.prodCon</groupId>
@@ -94,6 +98,7 @@
                 <version>${project.version}</version>
               </dependency>
             </contributions>
+
             <datasources>
               <dependency>
                 <groupId>com.h2database</groupId>
@@ -101,6 +106,7 @@
                 <version>${h2.version}</version>
               </dependency>
             </datasources>
+
             <!-- overlay configuration -->
             <configurationFiles>
               <copy>

@@ -8,18 +8,18 @@ import org.fabric3.api.implementation.timer.model.TimerType;
 
 @Timer(type = TimerType.RECURRING)
 @Component(composite= "{urn:mycompany.com}ChannelComposite")
-public class BuyComponent implements Runnable {
+public class BuyComponent2 implements Runnable {
 
-  @Producer(target="BuyChannel")
-  private BuyChannel buyChannel;
- 
-  public void run() {
-    System.out.println("sending bla");
-    buyChannel.publish("bla");
-  }
+    @Producer(target="BuyChannel")
+    private BuyChannel buyChannel;
 
-  public long nextInterval() {
-    return 1000;
-  }
+    public void run() {
+        System.out.println("sending bleh");
+        buyChannel.publish("bleh");
+    }
+
+    public long nextInterval() {
+        return 1000;
+    }
 
 }

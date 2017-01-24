@@ -9,9 +9,12 @@
   </parent>
   <groupId>com.mycompany.prodCon</groupId>
   <artifactId>consumer</artifactId>
+  <description>Consumer POM</description>
+
   <packaging>sca-contribution-jar</packaging>
+
   <version>${fabric3.version}</version>
-  <name>consumer</name>
+  <name>Consumer POM</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -21,28 +24,28 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-        <groupId>org.codehaus.fabric3.spec</groupId>
-        <artifactId>sca-api</artifactId>
-        <version>${sca.api.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.fabric3</groupId>
-        <artifactId>fabric3-api</artifactId>
-        <version>${fabric3.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.fabric3</groupId>
-        <artifactId>fabric3-timer-api</artifactId>
-        <version>${fabric3.version}</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.fabric3</groupId>
-        <artifactId>fabric3-binding-zeromq-api</artifactId>
-        <version>${fabric3.version}</version>
-      </dependency>
+      <groupId>org.codehaus.fabric3.spec</groupId>
+      <artifactId>sca-api</artifactId>
+      <version>${sca.api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.fabric3</groupId>
+      <artifactId>fabric3-api</artifactId>
+      <version>${fabric3.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.fabric3</groupId>
+      <artifactId>fabric3-timer-api</artifactId>
+      <version>${fabric3.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.fabric3</groupId>
+      <artifactId>fabric3-binding-zeromq-api</artifactId>
+      <version>${fabric3.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
