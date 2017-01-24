@@ -30,13 +30,3 @@ public class ChannelProvider {
   }
 
 }
-
-
-      QName name = new QName("urn:mycompany.com", "ChannelComposite");
-      ChannelBuilder channelBuilder = ChannelBuilder.newBuilder("BuyChannel");
-      CompositeBuilder compositeBuilder = CompositeBuilder.newBuilder(name);
-      List<String> addresses = Collections.singletonList(PROVIDER_CHANNEL_ADDRESS);
-      ZeroMQBinding binding = ZeroMQBindingBuilder.newBuilder().address(addresses).build();
-      channelBuilder.binding(binding);
-      compositeBuilder.channel(channelBuilder.build());
-      return compositeBuilder.deployable().build();

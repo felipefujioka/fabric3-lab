@@ -22,7 +22,7 @@
      <artifactId>fabric3-samples</artifactId>
      <version>3.0.0</version>
   </parent>
-  <artifactId>server</artifactId>
+  <artifactId>server_consumer</artifactId>
   <name>Fabric3 Server Single VM Server</name>
   <description>Fabric3 Single VM Server</description>
 

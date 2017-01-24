@@ -43,8 +43,8 @@
     </properties>
 
     <modules>
-        <module>features/zmq_producer</module>
-        <module>features/zmq_consumer</module>
+        <module>zmq_producer</module>
+        <module>zmq_consumer</module>
 
         <module>server_producer</module>
         <module>server_consumer</module>
