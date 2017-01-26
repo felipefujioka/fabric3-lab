@@ -10,7 +10,7 @@
   </parent>
 
   <groupId>com.mycompany.prodCon</groupId>
-  <artifactId>producer</artifactId>
+  <artifactId>producerZMQ</artifactId>
   <description>Producer POM</description>
   <packaging>sca-contribution-jar</packaging>
   <version>${fabric3.version}</version>

@@ -15,7 +15,7 @@ import org.fabric3.api.binding.zeromq.model.ZeroMQBinding;
  
 public class ChannelProvider {
 
-  private static final String PROVIDER_CHANNEL_ADDRESS = "127.0.0.1:12001";
+  private static final String PROVIDER_CHANNEL_ADDRESS = "0.0.0.0:12001";
 
   @Provides
   public static Composite createComposite() {

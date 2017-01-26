@@ -8,7 +8,7 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>com.mycompany.prodCon</groupId>
-  <artifactId>consumer</artifactId>
+  <artifactId>consumerZMQ</artifactId>
   <description>Consumer POM</description>
 
   <packaging>sca-contribution-jar</packaging>
